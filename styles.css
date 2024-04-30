@@ -58,6 +58,9 @@ body {
   font-size: 18px;
   margin-bottom: 5px;
 }
+.laps li:last-child {
+  padding-bottom: 32px;
+}
 .buttons button {
   font-size: 18px;
   padding: 10px 20px;
