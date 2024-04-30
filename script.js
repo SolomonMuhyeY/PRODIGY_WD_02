@@ -30,12 +30,16 @@ function stopTimer() {
 function resetTimer() {
   stopTimer();
   elapsedTime = 0;
-  updateTimer();
+  resetTimerCounter();
   lapList.innerHTML = "";
 }
 
 function updateTimer() {
   const currentTime = Date.now() - startTime;
+  updateDisplay(currentTime);
+}
+function resetTimerCounter() {
+  const currentTime = 0;
   updateDisplay(currentTime);
 }
 
